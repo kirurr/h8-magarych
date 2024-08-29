@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { REST, Routes } from "discord.js";
-import changeTarget from "./commands/change-target.ts";
+import changeTarget from "./commands/change-target";
 
 const token = process.env.DISCORD_TOKEN;
 const clientId = process.env.APP_ID;

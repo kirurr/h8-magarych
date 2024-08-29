@@ -1,5 +1,5 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
-import { writeTargetUserId } from "../utils.ts";
+import { writeTargetUserId } from "../utils";
 
 export default {
   data: new SlashCommandBuilder()

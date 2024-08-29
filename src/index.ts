@@ -8,8 +8,8 @@ import {
   ChatInputCommandInteraction,
   SlashCommandOptionsOnlyBuilder,
 } from "discord.js";
-import changeTarget from "./commands/change-target.ts";
-import { readTargetUserId } from "./utils.ts";
+import changeTarget from "./commands/change-target";
+import { readTargetUserId } from "./utils";
 
 type Command = {
   data: SlashCommandBuilder | SlashCommandOptionsOnlyBuilder;
