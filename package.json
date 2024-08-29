@@ -8,7 +8,7 @@
     "register": "node dist/deploy-commands.js",
     "dev": "tsx watch src/index.ts",
     "dev-register": "tsx src/deploy-commands.ts",
-    "build": "tsc && npm register"
+    "build": "tsc && npm run register"
   },
   "dependencies": {
     "discord.js": "^14.15.3",
