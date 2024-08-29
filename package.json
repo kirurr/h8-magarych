@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "type": "module",
-  "engines": {
-    "node": ">=18.x"
-  },
+  "packageManager": "^pnpm@9.7.1",
   "scripts": {
     "start": "node dist/index.js",
     "register": "node dist/deploy-commands.js",
