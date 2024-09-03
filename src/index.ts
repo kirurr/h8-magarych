@@ -62,9 +62,17 @@ client.on(Events.InteractionCreate, async (interaction) => {
 });
 
 client.on("messageCreate", (message) => {
-	const targetUserId = readTargetUserId();
+	if (message.author.bot) return;
+
+  const targetUserId = readTargetUserId();
+  if (targetUserId === null) {
+    return message.reply(
+      "нет магарыча, укажите магарыча командой /change-target",
+    );
+  }
+
   if (message.author.id === targetUserId && !message.author.bot) {
-    message.reply("магарыч пидарас!");
+    return message.reply("магарыч пидарас!");
   }
 });
 const token = process.env.DISCORD_TOKEN;

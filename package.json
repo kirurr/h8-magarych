@@ -2,6 +2,7 @@
   "name": "h8-magarych",
   "version": "1.0.0",
   "main": "dist/index.js",
+	"type": "module",
   "scripts": {
     "start": "node dist/index.js",
     "register": "node dist/deploy-commands.js",
