@@ -4,14 +4,14 @@
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"target": "es2022",
-		"allowJs": true,
+		//"allowJs": true,
 		"resolveJsonModule": true,
 		"moduleDetection": "force",
 		"isolatedModules": true,
 		/* Strictness */
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
-		"checkJs": true,
+		//"checkJs": true,
 		/* Bundled projects */
 		"lib": [
 			"ES2022"
@@ -27,16 +27,7 @@
 				"./src/*"
 			]
 		}
-	},
-	"include": [
-		".eslint.config.js",
-		"**/*.ts",
-		"**/*.cjs",
-		"**/*.js"
-	],
-	"exclude": [
-		"node_modules"
-	]
+	}
 }
 //{
 //  "compilerOptions": {
